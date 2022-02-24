@@ -24,6 +24,16 @@ context called `HoroscopeContext`. If you're lost, check out the
 Awesome! You have created your context, now you can use your `Provider`
 component.
 
+If you have succeeded, the code in your __src/HoroscopeContext.js__ file should look
+like this:
+
+```js
+    import { createContext } from 'react';
+
+    export const HoroscopeContext = createContext();
+
+```
+
 ## Create Context Provider
 
 In your __src/index.js__ file, import `HoroscopeContext` from your __context__
@@ -32,6 +42,16 @@ directory.
 Inside your `Root` functional component, wrap `<App />` with the
 `HoroscopeContext.Provider` component. This is how you will give the horoscope
 context to your entire application.
+
+```js
+const Root = () => {
+    return (
+        <HoroscopeContext.Provider>
+            <App />
+        </HoroscopeContext.Provider>
+    );
+};
+```
 
 Let's make sure things are going smoothly.
 
@@ -49,10 +69,10 @@ later consume that context value.
 
 In the `HoroscopeContext.Provider` component, include your `value` prop and set
 it to an object with a key of `sign` and a value of `Leo`. (Feel free to use any
-other sign.) The object should look like this:
+other sign.) The value prop should look like this:
 
 ```js
-{ sign: "Leo" }
+value={{ sign: "Leo" }}
 ```
 
 The warning message in your sandbox browser should disappear.
@@ -60,8 +80,12 @@ The warning message in your sandbox browser should disappear.
 Now it is time to consume the context. Navigate to your `Detail` component. At
 the top, import `useContext` from react. Next, import `HoroscopeContext` from
 __context/HoroscopeContext.js__. Inside your `Detail` component, create the
-variable `horoscopesObj` and have it equal to `useContext` invoked with
-`HoroscopeContext` passed in as your argument.
+variable `horoscopesObj` and set it equal to `useContext` invoked with
+`HoroscopeContext` passed in as your argument:
+
+```js
+const horoscopesObj = useContext(HoroscopeContext);
+```
 
 ### It's time to test!
 
