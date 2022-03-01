@@ -60,7 +60,7 @@ message from React that says your `Context.Provider` is missing a `value` prop.
 This means that you have successfully created your context provider, but now you
 must deal with this warning message.
 
-## Consume the Context
+## Provide the Context
 
 As you have seen in your DevTools, React is warning you that you need to have a
 `value` prop in your `Context.Provider`. This `value` prop is what holds all of
