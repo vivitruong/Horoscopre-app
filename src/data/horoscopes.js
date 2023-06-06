@@ -5,7 +5,7 @@ const horoscopes = {
   "element":"Fire",
   "traits": "Ambitious, Independent, Impatient",
   "backgroundImg":"https://www.horoscope.com/images-US/signs/profile-aries.png",
-  "match": "Sagittarius"
+  "match": "Gemini"
   },
   "Taurus":{
     "name": "Taurus",
@@ -21,7 +21,7 @@ const horoscopes = {
     "element":"Air",
     "traits": "Curious, Affectionate, Kind",
     "backgroundImg":"https://www.horoscope.com/images-US/signs/profile-gemini.png",
-    "match": "Aries & Leo"
+    "match": "Aries"
   },
   "Cancer":{
     "name": "Cancer",
@@ -69,7 +69,7 @@ const horoscopes = {
     "element":"Fire",
     "traits": "Adventurous, Creative, Strong Willed",
     "backgroundImg":"https://www.horoscope.com/images-US/signs/profile-sagittarius.png",
-    "match": "Aries"
+    "match": "Libra"
   },
   "Capricorn":{
     "name": "Capricorn",
